@@ -1,0 +1,22 @@
+name: agio_dev_mode
+version: 0.0.1
+label: agio Dev Mode
+description: |
+  agio Dev Mode package
+icon: ""
+
+tags:
+  - dev
+
+urls:
+  source_url: "https://github.com/agio-band/agio-dev-mode.git"
+  home_page: "https://github.com/agio-band/agio-dev-mode.git"
+  documentation: "https://github.com/agio-band/agio-dev-mode.git"
+  bug_tracker: ""
+
+required_packages: []
+
+plugins:
+  - label: Simple Publisher Dialog
+    implementations:
+      - module: plugins/simple_publisher_service.py
