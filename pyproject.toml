@@ -1,6 +1,6 @@
 [project]
 name = "agio-dev-mode"
-version = "0.0.1"
+version = "0.0.2"
 description = "Dummy functions for development period"
 authors = [
     { name = "paul", email = "paulwinex@gmail.com" }

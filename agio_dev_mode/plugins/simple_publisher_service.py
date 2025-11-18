@@ -9,13 +9,16 @@ logger = logging.getLogger(__name__)
 
 
 class SimplePublisherService(ServicePlugin):
-    name = 'dev'
+    name = 'devmode'
 
     def execute(self, **kwargs):
         pass
 
     @make_action(menu_name='task.launcher', app_name='front')
     def open_publisher_dialog(self, *args, task_id: str, **kwargs):
+        """
+        Start publish simple from main env using ws id from task
+        """
         project_info = self.get_workspace_id(task_id)
 
         if not project_info['ws_id']:
